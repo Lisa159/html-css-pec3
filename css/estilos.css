@@ -1,0 +1,666 @@
+:root {
+  --color: rgb(0, 0, 0);
+  --contrast-font-color: rgb(255, 255, 255);
+  --contrast-color: rgb(189, 55, 0);
+  --main-color: rgb(244, 244, 244);
+  --form-color: rgb(242, 232, 228);
+  --font-family: 'Raleway', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	display: flex;
+    flex-direction: column;
+	margin: 0;
+	font-family: var(--font-family);
+	min-height: 100vh;
+}
+
+/********Header********/
+
+header, nav{
+	background-color: var(--contrast-font-color);
+	display: flex;
+}
+
+header span{
+	text-transform: uppercase;
+}
+
+header .subtitle{
+	font-size: 12px;
+}
+
+header .titular{
+	color: var(--color);
+	text-decoration: none;
+	font-size: 50px;
+    font-weight: 800;
+}
+
+header div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+	text-align: center;
+}
+
+nav{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+    flex-direction: column;
+	text-align: center;
+	box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
+	position: sticky;
+	top: 0px;
+}
+
+nav, header .subtitle, header .titular{
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+nav ul{
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	display:inline;
+	margin-top: 5px;
+}
+
+nav ul li:first-of-type{
+	margin-top: 0px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: var(--color);
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover{
+	color: rgba(0,0,0,0.5);
+}
+
+nav ul li .navSelected{
+	font-weight: 700;
+	color: var(--contrast-color);
+}
+
+/********Main********/
+
+main{
+	flex: 1 0 auto;
+	background-color: var(--main-color);
+	width: inherit;
+	height: 100%;
+}
+
+main abbr, 
+footer abbr{
+	text-decoration: none;
+}
+
+main cite{
+	font-weight: 700;
+}
+
+/********Contenido********/
+
+.indexMainContainer section{
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.indexMainContainer .section-01{
+	height: 300px;
+	align-items: center;
+    justify-content: center;
+	background: url("../img/bg-hero-home.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+}
+
+.indexMainContainer .section-01 h1{
+	color: var(--contrast-font-color);
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 55px;
+	text-align: center;
+}
+
+.indexMainContainer .section-02{
+	margin-top: 30px;
+	padding-bottom: 50px;
+}
+
+.indexMainContainer h2{
+	font-size: 20px;
+    font-weight: 800;
+    align-self: center;
+    display: flex;
+	text-align: center;
+}
+
+.indexMainContainer .section-02 p{
+	margin: 0;
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.indexMainContainer .section-03{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.indexMainContainer .section-03 .news{
+	display: flex;
+	flex-direction: column;
+}
+
+.indexMainContainer .section-03 .news div{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.indexMainContainer .section-03 .news figure{
+	margin: 0;
+}
+
+.indexMainContainer .section-03 .news figcaption{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.indexMainContainer .section-03 .news img{
+	width: 100%;
+	height: 100%;
+}
+
+.indexMainContainer a,
+.symptomsMainContainer article a,
+.copMainContainer a{
+	color: var(--contrast-color);
+}
+
+.indexMainContainer .section-03 .news .linkTitle{
+	text-decoration: none;
+}
+
+.indexMainContainer a:hover,
+.symptomsMainContainer article a:hover,
+.copMainContainer a:hover{
+	color: var(--color);
+}
+
+.indexMainContainer .section-03 .news .readMoreLink,
+.symptomsMainContainer article .readMoreLink{
+	font-weight: 600;
+	border-bottom: dotted 1px var(--contrast-color);
+	text-decoration: none;
+}
+
+.symptomsMainContainer article .textLink,
+.indexMainContainer .section-04 a,
+.copMainContainer a{
+	text-decoration: none;
+}
+
+.symptomsMainContainer article .textLink:hover,
+.indexMainContainer .section-04 a:hover,
+.copMainContainer a:hover{
+	text-decoration: underline;
+}
+
+.indexMainContainer .section-03 .news .readMoreLink:hover,
+.symptomsMainContainer article .readMoreLink:hover{
+	border-bottom: dotted 1px var(--color);
+}
+
+.indexMainContainer .section-03 .news p{
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.indexMainContainer .section-04{
+	margin-top: 50px;
+	background-color: var(--form-color);
+	padding: 30px;
+}
+
+.indexMainContainer .section-04 p,
+.indexMainContainer .section-04 label{
+	font-size: 12px;
+}
+
+.indexMainContainer .section-04 .inputContainer input{
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0 5px 0;
+}
+
+.indexMainContainer .section-04 .checkContainer{
+	margin: 20px 0;
+}
+
+.indexMainContainer .section-04 .btnSend{
+	background-color: var(--contrast-color);
+	color: var(--color);
+	border: none;
+	padding: 13px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	width: 165px;
+	cursor: pointer;
+}
+
+.indexMainContainer .section-04 .btnSend:hover{
+	background-color: var(--color);
+	color: var(--contrast-font-color);
+}
+
+.symptomsMainContainer,
+.videosMainContainer,
+.copMainContainer{
+	padding: 50px 15px;
+}
+
+.symptomsMainContainer h1,
+.videosMainContainer h1,
+.copMainContainer h1{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 25px;
+	font-weight: 800;
+}
+
+.symptomsMainContainer article,
+.videosMainContainer section .gridVideos .videoContainer{
+	display: flex;
+	flex-direction: column;
+	padding: 30px 15px 15px 15px;
+	background-color: var(--contrast-font-color);
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.symptomsMainContainer article h2,
+.copMainContainer section article h2{
+	font-size: 18px;
+}
+
+.symptomsMainContainer article p,
+.symptomsMainContainer article a{
+	font-size: 14px;
+	text-align: justify;
+}
+
+.symptomsMainContainer article div{
+	margin-top: 15px;
+}
+
+.videosMainContainer section .gridVideos .videoContainer{
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.videosMainContainer section .gridVideos .videoContainer div{
+	max-height: 300px;
+	height: 300px;
+}
+
+.videosMainContainer section .gridVideos .videoContainer iframe{
+	width: 100%;
+	height: 100%;
+}
+
+.videosMainContainer section .gridVideos .videoContainer figcaption{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.copMainContainer section article{
+	margin-bottom: 40px;
+}
+
+.copMainContainer section article h3,
+.copMainContainer section article p,
+.copMainContainer section article a,
+.copMainContainer section article ol,
+.copMainContainer section article .containerQuote{
+	font-size: 15px;
+	text-align: justify;
+}
+
+.copMainContainer section article p,
+.copMainContainer section article ol,
+.copMainContainer section article .containerQuote{
+	line-height: 20px;
+}
+
+.copMainContainer section article .dataContainer p{
+	margin: 0;
+}
+
+.copMainContainer section article .dataContainer{
+	margin-bottom: 12px;
+}
+
+.copMainContainer section article ol{
+	margin-bottom: 30px;
+}
+
+.copMainContainer section article ol li{
+	margin-bottom: 15px;
+}
+
+.copMainContainer section article .containerQuote{
+	background-color: var(--contrast-font-color);
+	padding: 15px;
+	border-left: 5px solid var(--contrast-color);
+	line-height: 1.5em;
+	text-align: justify;
+	color: var(--color);
+	margin-bottom: 20px;
+}
+
+.copMainContainer section article .containerQuote blockquote{
+	margin: 0;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.copMainContainer section article .containerQuote span{
+	font-style: italic;
+	font-weight: 700;
+}
+
+/********Footer********/
+
+footer{
+	background-color: var(--color);
+	color: var(--contrast-font-color);
+	font-family: var(--font-family);
+}
+
+footer .containerCredits{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: inherit;
+    height: inherit;
+	margin-left: 20%;
+	margin-right: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer p{
+	margin: 0;
+	margin-bottom: 10px;
+	color: var(--contrast-font-color);
+	text-align: center;
+}
+
+footer ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 15px 0;
+}
+
+footer .legalList{
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .legalList li a,
+footer .socialNetworksList li a{
+	text-decoration: none;
+	color: var(--contrast-font-color);
+}
+
+footer .socialNetworksList{
+	display: flex;
+    align-items: center;
+}
+
+footer .socialNetworksList img{
+	fill: var(--contrast-font-color);
+    width: 24px;
+    height: 24px;
+}
+
+footer ul li a:hover{
+	cursor: pointer;
+}
+
+footer .legalList li a:hover{
+	color: var(--contrast-color);
+}
+
+footer .socialNetworksList li a:hover{
+	opacity: 0.7;
+}
+
+footer .socialNetworksList li:first-of-type,
+footer .socialNetworksList li:last-of-type {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+footer .socialNetworksList li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/********************************************************/
+/********Diseño responsivo para pantallas grandes********/
+/********************************************************/
+
+@media screen and (min-width: 500px) {
+	
+	/********header********/
+	
+	header div{
+		text-align: start;
+	}
+	
+	nav ul{
+		flex-direction: row;
+	}
+	
+	nav ul li{
+		margin-top: 0px;
+		margin-right: 30px;
+		font-size: 14px;
+	}
+	
+	/********Contenido********/
+	
+	.indexMainContainer section{
+		padding: 0 20%;
+	}
+	
+	.indexMainContainer .section-03 .news{
+		flex-direction: row;
+	}
+	
+	.indexMainContainer .section-03 .news div{
+		margin-right: 20px;
+		width: 33%;
+	}
+	
+	.indexMainContainer .section-03 .news div:last-of-type{
+		margin-right: 0px;
+	}
+	
+	.indexMainContainer .section-04 form{
+		width: 300px;
+		flex-direction: column;
+		align-self: center;
+		display: flex;
+	}
+	
+	.symptomsMainContainer, .videosMainContainer, .copMainContainer{
+		display: flex;
+		flex-direction: column;
+		padding: 50px 20%;
+	}
+	
+	.symptomsMainContainer article{
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+		background-color: transparent;
+		border-radius: 0px;
+		grid-template-areas: "a b c";
+		padding: 0;
+	}
+	
+	.symptomsMainContainer article img{
+		width: 100%;
+		margin-right: 15px;
+		min-width: 135px;
+		padding: 15px;
+		background-color: var(--contrast-font-color);
+		place-self: center stretch;
+		height: 100%;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		grid-area: a;
+	}
+	
+	.symptomsMainContainer article div{
+		margin-top: 0px;
+		padding: 15px;
+		background-color: var(--contrast-font-color);
+		place-self: center stretch;
+		height: 100%;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		grid-area: b;
+	}
+	
+	.symptomsMainContainer article:nth-child(even) img{
+		grid-area: a;
+	}
+	
+	.symptomsMainContainer article:nth-child(even) div{
+		grid-area: b;
+	}
+	
+	.symptomsMainContainer article:nth-child(odd) img{
+		grid-area: b;
+	}
+	
+	.symptomsMainContainer article:nth-child(odd) div{
+		grid-area: c;
+	}
+	
+	.videosMainContainer section{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.videosMainContainer section .gridVideos{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		background-color: transparent;
+		grid-template-areas: "a b" "c d";
+		padding: 0;
+	}
+	
+	.videosMainContainer section .gridVideos .videoContainer:nth-child(odd){
+		margin-right: 20px;
+	}
+	
+	.videosMainContainer section .gridVideos .videoContainer{
+		margin-bottom: 30px;
+	}
+	
+	.videosMainContainer section .gridVideos .videoContainer iframe{
+		width: 100%;
+		height: 100%;
+	}
+	
+	.copMainContainer section .articlesContainer{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.copMainContainer section article:first-child{
+		margin-right: 70px;
+	}
+	
+	.copMainContainer section article:first-child img{
+		width: 230px;
+	}
+	
+	/********Footer********/
+	
+	footer .containerCredits{
+		align-items: initial;
+		font-size: 12px;
+	}
+  
+	footer ul {
+		flex-direction: row !important;
+		margin: 10px 0;
+	}
+
+	footer .legalList li{
+		list-style-type: disc;
+		margin-right: 25px;
+	}
+
+	footer .legalList li:first-child{
+		list-style-type: none;
+	}
+
+	footer p{
+		text-align: start;
+	}
+
+	footer .socialNetworksList img{
+		width: 18px;
+		height: 18px;
+	}
+}
+
