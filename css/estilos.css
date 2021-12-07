@@ -360,7 +360,8 @@ main cite{
 	margin-bottom: 40px;
 }
 
-.copMainContainer section article h3,
+.copMainContainer section article dt,
+.copMainContainer section article dd,
 .copMainContainer section article p,
 .copMainContainer section article a,
 .copMainContainer section article ol,
@@ -375,12 +376,13 @@ main cite{
 	line-height: 20px;
 }
 
-.copMainContainer section article .dataContainer p{
-	margin: 0;
+.copMainContainer section article dt{
+	font-weight: 700;
 }
 
-.copMainContainer section article .dataContainer{
+.copMainContainer section article dl dd{
 	margin-bottom: 12px;
+	margin-left: 0;
 }
 
 .copMainContainer section article ol{
